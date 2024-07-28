@@ -3,12 +3,15 @@ public class Main {
         Titular t1 = new Titular();
         t1.nome = "sandro";
         t1.cpf = "222.222.222-54";
-        t1.
+        t1.proficao = "programador";
+
 
         Conta c1 = new Conta();
         c1.saldo = 300;
         //c1.sacar(20);
         //c1.depositar(10);
+        c1.titular = t1;
+        System.out.println(c1.titular.nome);
 
         Conta c2 = new Conta();
         c2.saldo = 300; 
