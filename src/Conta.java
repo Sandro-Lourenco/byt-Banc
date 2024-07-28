@@ -1,6 +1,6 @@
 public class Conta {
     Titular titular;
-    double saldo;
+    private double saldo;
     private int numeroDaConta;
     private int agencia;
 
