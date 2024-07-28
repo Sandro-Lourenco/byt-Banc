@@ -1,5 +1,5 @@
 public class Conta {
-    Titular titular;
+    private Titular titular; //composição de obijeto
     private double saldo;
     private int numeroDaConta;
     private int agencia;
@@ -55,6 +55,14 @@ public class Conta {
 
     public void setAgencia(int agencia) {
         this.agencia = agencia;
+    }
+
+    public void setTitular(Titular titular){
+        this.titular = titular;
+    }
+
+    public Titular geTitular(){
+        return this.titular;
     }
     
 }
