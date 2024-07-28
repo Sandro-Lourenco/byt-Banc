@@ -1,9 +1,8 @@
 public class Conta {
-    private String titular;
+    Titular titular;
     double saldo;
     private int numeroDaConta;
     private int agencia;
-    private int nume; 
 
     public void depositar(double valor){
         if (this.saldo >= valor) {
@@ -30,14 +29,6 @@ public class Conta {
         return false;
     }
 
-    public String getTitular() {
-        return titular;
-    }
-
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
-
     public double getSaldo() {
         return saldo;
     }
@@ -61,14 +52,5 @@ public class Conta {
     public void setAgencia(int agencia) {
         this.agencia = agencia;
     }
-
-    public int getNume() {
-        return nume;
-    }
-
-    public void setNume(int nume) {
-        this.nume = nume;
-    }
-
     
 }
