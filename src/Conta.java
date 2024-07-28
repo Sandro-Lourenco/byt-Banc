@@ -17,9 +17,8 @@ public class Conta {
         if (this.saldo >= valor) {
             this.saldo -= valor;
             return true;
-        }else{
-            return false;
         }
+        return false;
 
     }
 
@@ -28,8 +27,8 @@ public class Conta {
             this.saldo -= valor; //tirar o valor da minha conta de origrm 
             destino.depositar(valor);//pega a referencia e deposita o valor
             return true;
-        }else{
-            return false;
         }
+        return false;
+        
     }
 }
