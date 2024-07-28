@@ -3,6 +3,14 @@ public class Conta {
     private double saldo;
     private int numeroDaConta;
     private int agencia;
+    private static int totalDeContas;
+
+    public Conta(int numeroDaConta, int agencia){
+        Conta.totalDeContas++;
+        System.out.println("total de contas criadas " + totalDeContas);
+        this.numeroDaConta = numeroDaConta;
+        this.agencia = agencia;
+    }
 
     public void depositar(double valor){
         if (this.saldo >= valor) {
