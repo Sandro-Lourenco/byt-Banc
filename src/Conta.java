@@ -45,16 +45,8 @@ public class Conta {
         return numeroDaConta;
     }
 
-    public void setNumeroDaConta(int numeroDaConta) {
-        this.numeroDaConta = numeroDaConta;
-    }
-
     public int getAgencia() {
         return agencia;
-    }
-
-    public void setAgencia(int agencia) {
-        this.agencia = agencia;
     }
 
     public void setTitular(Titular titular){
