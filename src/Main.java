@@ -7,8 +7,12 @@ public class Main {
         c1.saldo = 300;
         //c1.sacar(20);
         //c1.depositar(10);
-        c1.transferir(100, c2);
 
+        if(c2.transferir(900, c1)){
+            System.out.println("transferencia feita com sucesso");//true
+        }else{
+            System.out.println("seu saldo é insuficiente");
+        }
 
         System.out.println(c2.saldo);//400
         System.out.println(c1.saldo);//200
